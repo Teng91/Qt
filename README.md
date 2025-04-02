@@ -36,7 +36,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr) : QMainWindow(parent)
     {
-        // 加載圖像
+        // 加載影像
         cv::Mat img = cv::imread("path_to_image.jpg");
         if (img.empty()) {
             qDebug() << "Image not found!";
@@ -46,7 +46,7 @@ public:
         // 將 Mat 轉換為 QImage
         QImage qImg = QImage(img.data, img.cols, img.rows, img.step, QImage::Format_RGB888);
 
-        // 顯示圖像
+        // 顯示影像
         QLabel *label = new QLabel(this);
         label->setPixmap(QPixmap::fromImage(qImg.rgbSwapped())); // OpenCV 默認是 BGR 格式，Qt 需要 RGB
         label->setFixedSize(qImg.size());
