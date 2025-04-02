@@ -1,4 +1,4 @@
-# Qt 與 OpenCV安裝使用教學
+# Qt 與 OpenCV 安裝使用教學
 ## 安裝 Qt 6.0.2
 - 可以從 Qt 官網 https://www.qt.io/ 下載並安裝 Qt Creator(開發Qt應用程式的IDE)
 ## 安裝 OpenCV 4.10.0
